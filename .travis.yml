@@ -8,4 +8,4 @@ install: mvn --version
 
 env:
   global:
-    secure: "JIQZsV05uCzilu2PopWa0niWcEpTNXjSXtE2j4Kvu5kpocF83QP2vHmJsLSaq3xzBCuSt8oKgdB4/clCE7C/6ZdaXVTotgsj40stkL1Y/eHskNpS+ZpqYgX3gxg2RmXqVWlDklGvoDK27OzES4pHtHFI+nhXFkilSkqNwSYDjg4="
+    secure: "VEkODWOnAcAFau78rSMvGBxj48pAswhQ7Txq4NCiYRZRoSkcGwfbnTh6QKfMYS9NNRBEQ41iTpUEf74vabp6OKAAEW1dR0Y7XvN+RDcIBNVzYMM+/UqS/LaMU2yp6eBZDRg42zodCpFEAimTZFBiWm5qDiwVCoXm2wMZ1Fo6cD8="
