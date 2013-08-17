@@ -2,3 +2,10 @@ language: java
 jdk:
   - oraclejdk7
 script: "mvn verify"
+
+#skip install
+install: mvn --version 
+
+env:
+  global:
+    secure: "JIQZsV05uCzilu2PopWa0niWcEpTNXjSXtE2j4Kvu5kpocF83QP2vHmJsLSaq3xzBCuSt8oKgdB4/clCE7C/6ZdaXVTotgsj40stkL1Y/eHskNpS+ZpqYgX3gxg2RmXqVWlDklGvoDK27OzES4pHtHFI+nhXFkilSkqNwSYDjg4="
