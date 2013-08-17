@@ -11,4 +11,5 @@ env:
     secure: "VEkODWOnAcAFau78rSMvGBxj48pAswhQ7Txq4NCiYRZRoSkcGwfbnTh6QKfMYS9NNRBEQ41iTpUEf74vabp6OKAAEW1dR0Y7XvN+RDcIBNVzYMM+/UqS/LaMU2yp6eBZDRg42zodCpFEAimTZFBiWm5qDiwVCoXm2wMZ1Fo6cD8="
 
 after_success:
-  - mvn -q com.github.github:site-maven-plugin:site
+  - mvn site
+  - mvn com.github.github:site-maven-plugin:site -X
