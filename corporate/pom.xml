@@ -22,7 +22,7 @@
 			<plugin>
 				<groupId>com.github.github</groupId>
 				<artifactId>site-maven-plugin</artifactId>
-				<version>.8</version>
+				<version>0.8</version>
 				<configuration>
 					<message>Travis #${env.TRAVIS_JOB_ID} build ${project.name}
 						${project.version}</message>
