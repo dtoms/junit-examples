@@ -10,9 +10,28 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<failsafeSurefire.version>2.14</failsafeSurefire.version>
+		<github.global.oauth2Token>${env.OATH_TOKEN}</github.global.oauth2Token>
 	</properties>
 	<build>
 		<plugins>
+			<plugin>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.2</version>
+			</plugin>
+			<plugin>
+				<groupId>com.github.github</groupId>
+				<artifactId>site-maven-plugin</artifactId>
+				<version>.8</version>
+				<configuration>
+					<message>Travis #${env.TRAVIS_JOB_ID} build ${project.name}
+						${project.version}</message>
+					<outputDirectory>${project.build.directory}</outputDirectory>
+
+					<dryRun>true</dryRun>
+				</configuration>
+			</plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
@@ -28,7 +47,7 @@
 								<requireMavenVersion>
 									<version>3.0</version>
 								</requireMavenVersion>
-					
+
 							</rules>
 						</configuration>
 					</execution>
@@ -50,7 +69,6 @@
 
 		</pluginManagement>
 	</build>
-
 	<profiles>
 		<profile>
 			<id>sortpom</id>
@@ -86,4 +104,54 @@
 			</build>
 		</profile>
 	</profiles>
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9</version>
+				<reportSets>
+					<reportSet>
+						<id>default</id>
+						<reports>
+							<report>javadoc</report>
+							<report>test-javadoc</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+				<configuration>
+					<aggregate>false</aggregate>
+
+					<!-- <stylesheetfile>${basedir}/src/site/resources/css/javadoc.css</stylesheetfile> -->
+					<additionalJOptions>
+						<additionalJOption>-J-Xmx512M</additionalJOption>
+					</additionalJOptions>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.6</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>dependencies</report>
+							<report>index</report>
+							<report>modules</report>
+							<report>summary</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+				<configuration>
+					<dependencyDetailsEnabled>false</dependencyDetailsEnabled>
+					<dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>${failsafeSurefire.version}</version>
+			</plugin>
+		</plugins>
+	</reporting>
 </project>

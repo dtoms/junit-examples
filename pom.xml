@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.danieltoms.junit</groupId>
 	<artifactId>junit-examples-modules</artifactId>
-	<!--  intenionally overriding corporate pom version to decouple -->
+	<!--  intentionally overriding corporate pom version to decouple -->
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>junit-examples</name>
@@ -20,7 +20,11 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
+    <scm>
+<url>https://github.com/dtoms/junit-examples</url>
+<connection>scm:git:git://https://github.com/dtoms/junit-examples</connection>
+<developerConnection>scm:git:git@github.com/dtoms/junit-examples</developerConnection>
+</scm>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
