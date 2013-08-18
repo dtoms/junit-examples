@@ -1,4 +1,4 @@
-# junit-execution-order
+## junit-execution-order
 
 This project contains various working test and suite examples mixing different JUnit annotations and rules.
 See the [javadoc](testapidocs) for details.  They each produce logging output demonstrating the order of execution.  
