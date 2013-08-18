@@ -26,12 +26,10 @@
 				<configuration>
 					<message>Travis #${env.TRAVIS_JOB_ID} build ${project.name}
 						${project.version}</message>
-					<outputDirectory>${project.build.directory}</outputDirectory>
-
-					<dryRun>true</dryRun>
+					<outputDirectory>${project.build.directory}/target/staging</outputDirectory>
+					<dryRun>false</dryRun>
 				</configuration>
 			</plugin>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
