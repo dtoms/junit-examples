@@ -1,1 +1,3 @@
 com.danieltoms.junit.order
+com.danieltoms.junit.order.rule
+com.danieltoms.junit.order.simple
