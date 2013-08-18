@@ -16,172 +16,208 @@
  * specific language governing permissions and limitations
  * under the License.
  
- dan
+
  */
+ 
+#bannerLeft {
+  padding: 10px;
+  color: #2b5797;
+}
+
+.poweredBy {
+
+  padding-top:20px;
+
+}
 
 body {
-  font-family: 'Segoe UI Light', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;	
-  padding: 0px 0px 10px 0px;
+    font-family: 'Segoe UI Light', 'Open Sans', Verdana, Arial, Helvetica,
+        sans-serif;
+    padding: 0px 0px 10px 0px;
 }
-body, td, select, input, li{
-  font-size: 13px;
+
+body,td,select,input,li {
+    font-size: 13px;
 }
-code{
-  font-family: Courier, monospace;
-  font-size: 13px;
+
+code {
+    font-family: Courier, monospace;
+    font-size: 13px;
 }
+
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-a:link, a:visited {
-    text-decoration:none;
-    color:#2b5797;
+a:link,a:visited {
+    text-decoration: none;
+    color: #2b5797;
 }
-a:hover, a:focus {
-    text-decoration:none;
 
-    color:#2b5797;
+a:hover,a:focus {
+    text-decoration: none;
+    color: #2b5797;
 }
+
 a:active {
-    text-decoration:none;
+    text-decoration: none;
+    color: #2b5797;
+}
 
-    color:#2b5797;
-}
 #legend li.externalLink {
-  background: url(../images/external.png) left top no-repeat;
-  padding-left: 18px;
+    background: url(../images/external.png) left top no-repeat;
+    padding-left: 18px;
 }
-a.externalLink, a.externalLink:link, a.externalLink:visited, a.externalLink:active, a.externalLink:hover {
-  background: url(../images/external.png) right center no-repeat;
-  padding-right: 18px;
+
+a.externalLink,a.externalLink:link,a.externalLink:visited,a.externalLink:active,a.externalLink:hover
+    {
+    background: url(../images/external.png) right center no-repeat;
+    padding-right: 18px;
 }
+
 #legend li.newWindow {
-  background: url(../images/newwindow.png) left top no-repeat;
-  padding-left: 18px;
+    background: url(../images/newwindow.png) left top no-repeat;
+    padding-left: 18px;
 }
-a.newWindow, a.newWindow:link, a.newWindow:visited, a.newWindow:active, a.newWindow:hover {
-  background: url(../images/newwindow.png) right center no-repeat;
-  padding-right: 18px;
+
+a.newWindow,a.newWindow:link,a.newWindow:visited,a.newWindow:active,a.newWindow:hover
+    {
+    background: url(../images/newwindow.png) right center no-repeat;
+    padding-right: 18px;
 }
 
 h1 {
-    font-size:1.8em;
+    font-size: 1.8em;
 }
+
 h2 {
-    font-size:1.5em;
-   
+    font-size: 1.5em;
     background-color: #FFFFFF;
     border: 0;
     color: #2b5797;
     font-weight: 900;
     padding: 4px 4px 4px 6px;
 }
+
 h3 {
-    font-size:1.4em;
-     background-color: #eff4ff;
-     border:0px;
-     color:#2b5797;
+    font-size: 1.4em;
+    background-color: #eff4ff;
+    border: 0px;
+    color: #2b5797;
 }
+
 h4 {
-    font-size:1.3em;
+    font-size: 1.3em;
 }
+
 h5 {
-    font-size:1.2em;
+    font-size: 1.2em;
 }
+
 h6 {
-    font-size:1.1em;
+    font-size: 1.1em;
 }
 
 p {
-  line-height: 1.3em;
-  font-size: small;
+    line-height: 1.3em;
+    font-size: small;
 }
+
 #breadcrumbs {
-  border: 0px;
-  background-color: #eff4ff;
+    border: 0px;
+    background-color: #eff4ff;
 }
+
 #leftColumn {
-	  font-size: large;
-  margin: 10px 0 0 5px;
-  border: 0px;
-  width:250px;
-  background-color: #FFFFFF;
-  padding-bottom: 3px; /* IE-9 scrollbar-fix */
+    font-size: large;
+    margin: 10px 0 0 5px;
+    border: 0px;
+    width: 250px;
+    background-color: #FFFFFF;
+    padding-bottom: 3px; /* IE-9 scrollbar-fix */
 }
+
 #bodyColumn {
     margin-left: 300px;
 }
+
 #navcolumn ul {
-  margin: 0;
-  padding: 0;
-  font-size: large;
+    margin: 0;
+    padding: 0;
+    font-size: large;
 }
+
 #navcolumn li {
-  list-style-type: none;
-  background-image: none;
-  background-repeat: no-repeat;
-  background-position: 0 0.4em;
-  padding-left: 16px;
-  list-style-position: outside;
-  line-height: 1.2em;
-  font-size: smaller;
+    list-style-type: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 0 0.4em;
+    padding-left: 16px;
+    list-style-position: outside;
+    line-height: 1.2em;
+    font-size: smaller;
 }
+
 #navcolumn h5 {
-  font-size: smaller;
-  border-bottom: 1px solid #aaaaaa;
-  padding-top: 2px;
-  color: #000;
+    font-size: smaller;
+    border-bottom: 1px solid #aaaaaa;
+    padding-top: 2px;
+    color: #000;
 }
 
 table.bodyTable th {
-  color: white;
-  background-color: #2b5797;
-  text-align: left;
-  font-weight: bold;
+    color: white;
+    background-color: #2b5797;
+    text-align: left;
+    font-weight: bold;
 }
 
-table.bodyTable th, table.bodyTable td {
-  font-size: 1em;
+table.bodyTable th,table.bodyTable td {
+    font-size: 1em;
 }
 
 table.bodyTable tr.a {
-  background-color: #eff4ff;
+    background-color: #eff4ff;
 }
 
 table.bodyTable tr.b {
-  background-color: #eee;
+    background-color: #eee;
 }
 
 .source {
-  border: 1px solid #999;
+    border: 1px solid #999;
 }
+
 dl {
-  padding: 4px 4px 4px 6px;
-  border: 1px solid #aaa;
-  background-color: #ffc;
+    padding: 4px 4px 4px 6px;
+    border: 1px solid #aaa;
+    background-color: #ffc;
 }
+
 dt {
-  color: #900;
+    color: #900;
 }
-#organizationLogo img, #projectLogo img, #projectLogo span{
-  margin: 8px;
+
+#organizationLogo img,#projectLogo img,#projectLogo span {
+    margin: 8px;
 }
+
 #banner {
-  border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
-.errormark, .warningmark, .donemark, .infomark {
-  background: url(../images/icon_error_sml.gif) no-repeat;
+
+.errormark,.warningmark,.donemark,.infomark {
+    background: url(../images/icon_error_sml.gif) no-repeat;
 }
 
 .warningmark {
-  background-image: url(../images/icon_warning_sml.gif);
+    background-image: url(../images/icon_warning_sml.gif);
 }
 
 .donemark {
-  background-image: url(../images/icon_success_sml.gif);
+    background-image: url(../images/icon_success_sml.gif);
 }
 
 .infomark {
-  background-image: url(../images/icon_info_sml.gif);
+    background-image: url(../images/icon_info_sml.gif);
 }
