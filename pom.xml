@@ -20,7 +20,7 @@
 	<scm>
 		<connection>scm:git:git://https://github.com/dtoms/junit-examples</connection>
 		<developerConnection>scm:git:git@github.com/dtoms/junit-examples</developerConnection>
-		<url>https://github.com/dtoms/junt-examples</url>
+		<url>https://github.com/dtoms/junit-examples</url>
 	</scm>
 	<distributionManagement>
 		<site>
