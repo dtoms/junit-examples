@@ -99,18 +99,7 @@
 		</profile>
 	</profiles>
 	<reporting>
-		<plugins>
-            <plugin>
-                <groupId>com.github.github</groupId>
-                <artifactId>site-maven-plugin</artifactId>
-                <version>0.8</version>
-                <configuration>
-                    <message>Travis #${env.TRAVIS_JOB_ID} build ${project.name}
-                        ${project.version}</message>
-                    <outputDirectory>${project.build.directory}/staging</outputDirectory>
-                    <dryRun>false</dryRun>
-                </configuration>
-            </plugin>		
+		<plugins>		
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
