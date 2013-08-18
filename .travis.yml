@@ -12,4 +12,5 @@ env:
 
 after_success:
   - mvn site
+  - mvn site:stage
   - mvn com.github.github:site-maven-plugin:site -X
