@@ -1,0 +1,14 @@
+<project xmlns="http://maven.apache.org/DECORATION/1.3.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd">
+<body>
+    <menu ref="parent" />
+    <menu name="Docs" >
+        <item name="About" href="index.html"/>
+        <item name="Repo" href="http://github.com/dtoms/junit-examples"/>
+        <item name="Javadoc" href="testapidocs/index.html"/>
+        <item name="Dependencies" href="dependencies.html"/>
+    </menu>
+
+</body>
+</project>
