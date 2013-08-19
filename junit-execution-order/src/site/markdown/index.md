@@ -3,6 +3,9 @@
 This project contains various working test and suite examples mixing different JUnit annotations and rules.
 See the [javadoc](testapidocs) for details.  They each produce logging output demonstrating the order of execution.  
 
+
+Feel free to [contact me](https://twitter.com/danieljtoms) or file [issues or requests](https://github.com/dtoms/junit-examples/issues).
+
 ### Goal
 
 The goal of this project is to help canonically demonstrate the execution order and serve as an immediate working reference when the inevitable questions arise.
@@ -35,10 +38,10 @@ Here is the output of [ExecutionOrderWithRulesTest](testapidocs/com/danieltoms/j
 [INFO] ExecutionOrderWithRulesTest - @Test: calculateTwo
 [INFO] ExecutionOrderWithRulesTest - @After: tearDownResourceOne
 [INFO] ExecutionOrderWithRulesTest - @After: tearDownResourceTwo
-[INFO] LoggingRule - @Rule. State: 'succeeded'. Field: methodResourcesOne. Method: acalculateTwo
-[INFO] LoggingRule - @Rule. State: 'finished'. Field: methodResourcesOne. Method: acalculateTwo
-[INFO] LoggingRule - @Rule. State: 'succeeded'. Field: methodResourcesTwo. Method: acalculateTwo
-[INFO] LoggingRule - @Rule. State: 'finished'. Field: methodResourcesTwo. Method: acalculateTwo
+[INFO] LoggingRule - @Rule. State: 'succeeded'. Field: methodResourcesOne. Method: calculateTwo
+[INFO] LoggingRule - @Rule. State: 'finished'. Field: methodResourcesOne. Method: calculateTwo
+[INFO] LoggingRule - @Rule. State: 'succeeded'. Field: methodResourcesTwo. Method: calculateTwo
+[INFO] LoggingRule - @Rule. State: 'finished'. Field: methodResourcesTwo. Method: calculateTwo
 [INFO] LoggingRule - @Rule. State: 'starting'. Field: methodResourcesTwo. Method: calculateOne
 [INFO] LoggingRule - @Rule. State: 'starting'. Field: methodResourcesOne. Method: calculateOne
 [INFO] ExecutionOrderWithRulesTest - @Before: setupResourceTwo
