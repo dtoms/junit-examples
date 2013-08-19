@@ -24,7 +24,10 @@ mvn test
 Or run from your favorite IDE.  Have fun comparing IDE execution, IDE Execution with Maven Integration, and command line maven.  No maven failsafe sort options have been applied, that is another subject.
 
 ### Sample output
-Here is the output of [ExecutionOrderWithRulesTest](testapidocs/com/danieltoms/junit/order/ExecutionOrderWithRulesTest.html)
+Here is the output of the ExecutionOrderWithRulesTest.  
+
+View Source [ExecutionOrderWithRulesTest.java](https://github.com/dtoms/junit-examples/blob/master/junit-execution-order/src/test/java/com/danieltoms/junit/order/ExecutionOrderWithRulesTest.java)  
+View Javadoc [ExecutionOrderWithRulesTest](testapidocs/com/danieltoms/junit/order/ExecutionOrderWithRulesTest.html)  
 
 ```
 [INFO] LoggingRule - @ClassRule. State: 'starting'. Field: classResourcesTwo
