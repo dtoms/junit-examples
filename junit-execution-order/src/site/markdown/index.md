@@ -3,6 +3,9 @@
 This project contains various working test and suite examples mixing different JUnit annotations and rules.
 See the [javadoc](testapidocs) for details.  They each produce logging output demonstrating the order of execution.  
 
+
+Feel free to [contact me](https://twitter.com/danieljtoms) or file [issues or requests](https://github.com/dtoms/junit-examples/issues).
+
 ### Goal
 
 The goal of this project is to help canonically demonstrate the execution order and serve as an immediate working reference when the inevitable questions arise.
