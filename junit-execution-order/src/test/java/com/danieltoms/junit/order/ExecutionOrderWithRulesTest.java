@@ -84,7 +84,7 @@ public class ExecutionOrderWithRulesTest {
 	}
 
 	@Test
-	public void acalculateTwo() {
+	public void calculateTwo() {
 		log.info("@Test: calculateTwo");
 	}
 }
