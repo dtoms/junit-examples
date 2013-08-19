@@ -6,7 +6,10 @@
     <menu name="About" >
         <item name="About" href="index.html"/>
         <item name="Repo" href="http://github.com/dtoms/junit-examples"/>
+        <item name="Issues" href="https://github.com/dtoms/junit-examples/issues"/>
+        <item name="Contact" href="https://twitter.com/danieljtoms"/>
     </menu>
+    
     <menu ref="modules"/> 
 
 </body>
