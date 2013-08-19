@@ -38,10 +38,10 @@ Here is the output of [ExecutionOrderWithRulesTest](testapidocs/com/danieltoms/j
 [INFO] ExecutionOrderWithRulesTest - @Test: calculateTwo
 [INFO] ExecutionOrderWithRulesTest - @After: tearDownResourceOne
 [INFO] ExecutionOrderWithRulesTest - @After: tearDownResourceTwo
-[INFO] LoggingRule - @Rule. State: 'succeeded'. Field: methodResourcesOne. Method: acalculateTwo
-[INFO] LoggingRule - @Rule. State: 'finished'. Field: methodResourcesOne. Method: acalculateTwo
-[INFO] LoggingRule - @Rule. State: 'succeeded'. Field: methodResourcesTwo. Method: acalculateTwo
-[INFO] LoggingRule - @Rule. State: 'finished'. Field: methodResourcesTwo. Method: acalculateTwo
+[INFO] LoggingRule - @Rule. State: 'succeeded'. Field: methodResourcesOne. Method: calculateTwo
+[INFO] LoggingRule - @Rule. State: 'finished'. Field: methodResourcesOne. Method: calculateTwo
+[INFO] LoggingRule - @Rule. State: 'succeeded'. Field: methodResourcesTwo. Method: calculateTwo
+[INFO] LoggingRule - @Rule. State: 'finished'. Field: methodResourcesTwo. Method: calculateTwo
 [INFO] LoggingRule - @Rule. State: 'starting'. Field: methodResourcesTwo. Method: calculateOne
 [INFO] LoggingRule - @Rule. State: 'starting'. Field: methodResourcesOne. Method: calculateOne
 [INFO] ExecutionOrderWithRulesTest - @Before: setupResourceTwo
