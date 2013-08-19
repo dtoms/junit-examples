@@ -34,8 +34,8 @@ View Javadoc [ExecutionOrderWithRulesTest](testapidocs/com/danieltoms/junit/orde
 [INFO] LoggingRule - @ClassRule. State: 'starting'. Field: classResourcesOne
 [INFO] ExecutionOrderWithRulesTest - @BeforeClass: setupClassResourceTwo
 [INFO] ExecutionOrderWithRulesTest - @BeforeClass: setupClassResourceOne
-[INFO] LoggingRule - @Rule. State: 'starting'. Field: methodResourcesTwo. Method: acalculateTwo
-[INFO] LoggingRule - @Rule. State: 'starting'. Field: methodResourcesOne. Method: acalculateTwo
+[INFO] LoggingRule - @Rule. State: 'starting'. Field: methodResourcesTwo. Method: calculateTwo
+[INFO] LoggingRule - @Rule. State: 'starting'. Field: methodResourcesOne. Method: calculateTwo
 [INFO] ExecutionOrderWithRulesTest - @Before: setupResourceTwo
 [INFO] ExecutionOrderWithRulesTest - @Before: setupResourceOne
 [INFO] ExecutionOrderWithRulesTest - @Test: calculateTwo
@@ -63,3 +63,5 @@ View Javadoc [ExecutionOrderWithRulesTest](testapidocs/com/danieltoms/junit/orde
 [INFO] LoggingRule - @ClassRule. State: 'succeeded'. Field: classResourcesTwo
 [INFO] LoggingRule - @ClassRule. State: 'finished'. Field: classResourcesTwo
 ```
+
+[Edit](https://github.com/dtoms/junit-examples/blob/master/junit-execution-order/src/site/markdown/index.md)
